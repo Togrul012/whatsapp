@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>WHATSAPP</title>
+    <style>
+        html, body{
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+        nav{
+            background-color: darkmagenta;
+            position: sticky;
+            top: 0;
+        }
+        nav a{
+            line-height: 50px;
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+            display: inline-block;
+        }
+        section{
+            height: calc(100vh - 50px);
+            scroll-margin-top: 50px;
+        }
+        #home{
+            background-color: orange;
+        }
+        #galery{
+            background-color: royalblue;
+        }
+        #about{
+            background-color: aquamarine;
+        }
+        #contact{
+            background-color: lime;
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            background-color: darkmagenta;
+        }
+       .img{
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+        transition: .2s;
+       }
+       .img:hover{
+        scale: 1.1;
+       }
+       .phone{
+        background: url(logo.jpg) center/cover;
+       }
+       .email{
+        background: url(logo2.png) center/cover;
+       }
+       .wp{
+        background: url(logo3.png) center/cover;
+       }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#galery">Galery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">Home Page</section>
+    <section id="galery">Galery Studio</section>
+    <section id="about">About Page</section>
+    <section id="contact">Contact Page</section>
+
+    <footer>
+        <a href="tel:+994777674886">
+       <div class="img phone"></div>
+        </a>
+        <a href="mailto:mmmdovtogrul710@gmail.com">
+         <div class="img email"></div>
+        </a>
+        <a href="https://wa.me/+994777674886">
+       <div class="img wp"></div>
+        </a>
+    </footer>
+
+</body>
+</html>
